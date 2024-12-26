@@ -1,0 +1,14 @@
+{
+    "name": "webuser/tic-tac-toe",
+    "description": "A simple Tic-Tac-Toe game project.",
+    "autoload": {
+        "psr-4": {
+            "Webuser\\TicTacToe\\": "src/"
+        }
+    },
+    "require": {
+        "slim/slim": "^4.14",
+        "slim/psr7": "^1.7",
+        "slim/http": "^0.4.0"
+    }
+}

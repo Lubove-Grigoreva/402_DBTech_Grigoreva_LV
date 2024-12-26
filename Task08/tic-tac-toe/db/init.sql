@@ -1,0 +1,15 @@
+CREATE TABLE games (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    player_name TEXT NOT NULL,
+    game_date TEXT NOT NULL,
+    result TEXT NOT NULL
+);
+
+CREATE TABLE moves (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    game_id INTEGER NOT NULL,
+    move_number INTEGER NOT NULL,
+    x INTEGER NOT NULL,
+    o INTEGER NOT NULL,
+    FOREIGN KEY (game_id) REFERENCES games(id)
+);
